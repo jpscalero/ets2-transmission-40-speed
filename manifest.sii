@@ -1,0 +1,9 @@
+SiiNunit
+{
+mod_package : .package {
+    package_version: "1.58"
+    display_name: "40 Gears Universal"
+    author: "Architect"
+    category[]: "transmission"
+}
+}

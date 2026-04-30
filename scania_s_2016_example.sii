@@ -1,0 +1,59 @@
+SiiNunit
+{
+accessory_transmission_data : ag40.scania.s_2016.transmission
+{
+	name: "Antigravity 40-Speed Scania S 2016"
+	price: 2
+	unlock: 0
+	icon: "transmission_generic"
+
+	differential_ratio: 3.0
+
+	ratios_forward[0]: 15.00
+	ratios_forward[1]: 14.63
+	ratios_forward[2]: 14.26
+	ratios_forward[3]: 13.88
+	ratios_forward[4]: 13.51
+	ratios_forward[5]: 13.14
+	ratios_forward[6]: 12.77
+	ratios_forward[7]: 12.40
+	ratios_forward[8]: 12.03
+	ratios_forward[9]: 11.65
+	ratios_forward[10]: 11.28
+	ratios_forward[11]: 10.91
+	ratios_forward[12]: 10.54
+	ratios_forward[13]: 10.17
+	ratios_forward[14]: 9.80
+	ratios_forward[15]: 9.42
+	ratios_forward[16]: 9.05
+	ratios_forward[17]: 8.68
+	ratios_forward[18]: 8.31
+	ratios_forward[19]: 7.94
+	ratios_forward[20]: 7.56
+	ratios_forward[21]: 7.19
+	ratios_forward[22]: 6.82
+	ratios_forward[23]: 6.45
+	ratios_forward[24]: 6.08
+	ratios_forward[25]: 5.71
+	ratios_forward[26]: 5.33
+	ratios_forward[27]: 4.96
+	ratios_forward[28]: 4.59
+	ratios_forward[29]: 4.22
+	ratios_forward[30]: 3.85
+	ratios_forward[31]: 3.47
+	ratios_forward[32]: 3.10
+	ratios_forward[33]: 2.73
+	ratios_forward[34]: 2.36
+	ratios_forward[35]: 1.99
+	ratios_forward[36]: 1.62
+	ratios_forward[37]: 1.24
+	ratios_forward[38]: 0.87
+	ratios_forward[39]: 0.50
+
+	ratios_reverse[0]: -15.0
+	ratios_reverse[1]: -10.0
+	ratios_reverse[2]: -5.0
+
+	retarder: 3
+}
+}
