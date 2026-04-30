@@ -1,38 +1,38 @@
-# Installation & Deployment Guide
+# Installation Guide / Guía de Instalación
 
-This guide covers everything from basic mod installation to advanced source-code builds for the Antigravity 40-Speed mod.
+[🇺🇸 English](#english) | [🇪🇸 Español](#espanol)
 
-## 📥 Method 1: Standard Installation (Recommended)
+---
 
-1.  **Download**: Navigate to the [Releases](../../releases) section and download the latest `Antigravity_40_Speed.scs` file.
+<a name="english"></a>
+## 🇺🇸 English: Standard Installation
+
+1.  **Download**: Navigate to the [Releases](../../releases) section and download the latest `.scs` file.
 2.  **Locate Mod Folder**: Open your Windows Explorer and go to:
     `%USERPROFILE%\Documents\Euro Truck Simulator 2\mod`
 3.  **Deploy**: Copy the `.scs` file into this folder.
-4.  **Activate**:
-    - Launch ETS2.
-    - Open the **Mod Manager**.
-    - Find "Antigravity 40-Speed Transmission Pack".
-    - Click the arrow to activate and ensure it has **High Priority** (top of the list).
+4.  **Activate**: Launch ETS2, open the **Mod Manager**, and find "Antigravity 40-Speed Transmission Pack". Set it to **High Priority**.
 
-## 🛠️ Method 2: Developer / Source Build
+---
 
-If you wish to modify the truck list or the gear ratios yourself, follow these steps:
+<a name="espanol"></a>
+## 🇪🇸 Español: Instalación Estándar
 
-1.  **Prerequisites**: Install [Python 3.x](https://www.python.org/).
-2.  **Clone**: `git clone https://github.com/jpscalero/ets2-transmission-40-speed.git`
-3.  **Generate**:
-    - Open a terminal in the project directory.
-    - Run `python generator.py`.
-    - This will create a `mod_files` directory with the updated `/def` structure.
-4.  **Pack**:
-    - Use a tool like 7-Zip or WinRAR.
-    - Select the **contents** of the `mod_files` folder.
-    - Add to archive, choose **ZIP** format, and **Store** (No compression) as the compression level.
-    - Rename `.zip` to `.scs`.
+1.  **Descarga**: Ve a la sección de [Releases](../../releases) y descarga el archivo `.scs` más reciente.
+2.  **Localizar Carpeta de Mods**: Abre el explorador de archivos y ve a:
+    `%USERPROFILE%\Documents\Euro Truck Simulator 2\mod`
+3.  **Despliegue**: Copia el archivo `.scs` en esta carpeta.
+4.  **Activación**: Inicia ETS2, abre el **Gestor de Mods** y busca "Antigravity 40-Speed Transmission Pack". Dale **Prioridad Alta**.
 
-## ❓ Troubleshooting
+---
 
-- **Mod not appearing?** Verify that you are on v1.58. Check the `game.log.txt` for "Entry point not found" errors.
-- **Physics Glitches?** Ensure you are using an Antigravity-compatible engine mod. Standard engines might feel "too slow" to shift with 40 gears.
+## 🛠️ Developer / Source Build (Desarrolladores)
 
-For more help, open a [Bug Report](../../issues).
+1.  **Clone**: `git clone https://github.com/jpscalero/ets2-transmission-40-speed.git`
+2.  **Generate**: Run `python generator.py`.
+3.  **Pack**: Use `python packer.py` to generate the `.scs` file automatically.
+
+## ❓ Troubleshooting / Solución de Problemas
+
+- **Mod not appearing? / ¿El mod no aparece?**: Verify that you are on v1.58. Check `game.log.txt`.
+- **Physics Glitches? / ¿Física extraña?**: Ensure you are using an Antigravity-compatible engine mod.
