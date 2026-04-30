@@ -3,7 +3,7 @@ SiiNunit
 mod_package : .package {
     package_version: "1.58.1"
     display_name: "Antigravity 40-Speed Transmission Pack"
-    author: "jpscalero & Antigravity AI"
+    author: "Juan Pedro"
     category[]: "transmission"
     icon: "mod_icon.jpg"
     description_file: "description.txt"

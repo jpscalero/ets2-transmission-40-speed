@@ -62,5 +62,5 @@ For deep technical insights, ratio theory, and troubleshooting, visit our [Proje
 
 ---
 
-**Project Auditor**: Antigravity Senior Lead Programmer.
+**Project Auditor**: Juan Pedro.
 **Maintainer**: [jpscalero](https://github.com/jpscalero).
