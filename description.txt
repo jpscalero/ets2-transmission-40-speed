@@ -1,9 +1,11 @@
-Este mod añade una transmisión de 40 marchas ultra-eficiente para todos los camiones originales de Euro Truck Simulator 2 (v1.58).
+Apex Drive Systems: Suite de Componentes de Alto Rendimiento (v1.58)
 
-Características:
-- 40 marchas hacia adelante (15.00 a 0.50).
-- 3 marchas atrás.
-- Compatible con Scania, Volvo, MAN, DAF, Iveco, Renault y Mercedes.
-- Desbloqueado desde nivel 0 por solo 2 créditos.
+Esta suite profesional añade la transmisión Apex de 40 marchas a todos los camiones nativos de Euro Truck Simulator 2. Diseñada para sincronizar la potencia de motores de hasta 30,000 CV con el motor de física Prism3D.
 
-Ingeniería Antigravity: Diseñado para estabilizar la física en motores de alta potencia (hasta 30,000 CV).
+Características Clave:
+- 40 marchas hacia adelante con progresión lineal optimizada.
+- 3 marchas atrás para maniobras de carga pesada.
+- Precio fijo de 2€ para máxima accesibilidad.
+- Compatibilidad universal con la versión 1.58.
+
+Apex Drive Systems: Ingeniería de Élite para el Simulador.

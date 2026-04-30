@@ -2,7 +2,7 @@ SiiNunit
 {
 mod_package : .package {
     package_version: "1.5.8"
-    display_name: "Antigravity 40-Speed Transmission Pack"
+    display_name: "Apex Drive Systems: 40-Speed Suite"
     author: "Juan Pedro"
     category[]: "transmission"
     icon: "mod_icon.png"
