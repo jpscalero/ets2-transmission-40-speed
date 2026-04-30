@@ -1,0 +1,16 @@
+name: Feature Request
+description: Suggest an idea for the Antigravity project.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: feature
+    attributes:
+      label: Feature Description
+      description: Describe the new transmission logic or truck support you would like to see.
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Why is this needed?
+      description: Explain how this improves the heavy hauling experience.

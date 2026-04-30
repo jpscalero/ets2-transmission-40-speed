@@ -1,0 +1,39 @@
+name: Bug Report
+description: Create a report to help us improve the transmission mod.
+labels: [bug, v1.58]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Please provide as much detail as possible to help our engineers diagnose the issue.
+  - type: input
+    id: truck_model
+    attributes:
+      label: Truck Model
+      description: Which truck are you using? (e.g., Scania S 2016)
+      placeholder: e.g. Volvo FH16 2012
+    validations:
+      required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: Game Version
+      options:
+        - v1.58.x
+        - v1.57.x (Legacy)
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Problem Description
+      description: What happened? (e.g., "Game crashed when selecting the gear", "Gear 40 has no power")
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Game Log (game.log.txt)
+      description: Please paste the relevant lines from your game.log.txt or upload the file.
+      render: text
