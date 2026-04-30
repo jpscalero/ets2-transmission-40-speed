@@ -1,0 +1,50 @@
+name: Build and Package SCS Mod
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    - name: Generate Mod Files
+      run: python generator.py
+
+    - name: Package SCS Mod
+      run: python packer.py
+
+    - name: Upload SCS Mod Artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: Antigravity-40-Speed-Mod
+        path: Antigravity_40_Speed_Transmission.scs
+
+    - name: Create Draft Release
+      if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+      uses: softprops/action-gh-release@v1
+      with:
+        files: Antigravity_40_Speed_Transmission.scs
+        tag_name: v${{ github.run_number }}
+        name: Release v${{ github.run_number }}
+        draft: true
+        body: |
+          Automatic build of the Antigravity 40-Speed Transmission Mod.
+          
+          **Changes in this version:**
+          - Compiled for ETS2 v1.58
+          - Updated truck compatibility list
+          - Automated build via GitHub Actions
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
