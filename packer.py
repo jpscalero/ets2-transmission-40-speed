@@ -3,7 +3,6 @@ import os
 
 MOD_FILENAME = "Antigravity_40_Speed_Transmission.scs"
 SOURCE_DIR = "mod_files"
-FILES_TO_INCLUDE = ["manifest.sii", "description.txt"]
 
 def package_mod():
     print(f"=== Antigravity Mod Packer ===")

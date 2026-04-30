@@ -1,11 +1,11 @@
 SiiNunit
 {
 mod_package : .package {
-    package_version: "1.58.1"
+    package_version: "1.5.8"
     display_name: "Antigravity 40-Speed Transmission Pack"
     author: "Juan Pedro"
     category[]: "transmission"
-    icon: "mod_icon.jpg"
+    icon: "mod_icon.png"
     description_file: "description.txt"
 }
 }
