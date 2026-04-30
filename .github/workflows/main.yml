@@ -11,11 +11,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write
+
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
 
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: '3.x'
 
@@ -26,14 +29,14 @@ jobs:
       run: python packer.py
 
     - name: Upload SCS Mod Artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: Antigravity-40-Speed-Mod
         path: Antigravity_40_Speed_Transmission.scs
 
     - name: Create Draft Release
       if: github.event_name == 'push' && github.ref == 'refs/heads/master'
-      uses: softprops/action-gh-release@v1
+      uses: softprops/action-gh-release@v2
       with:
         files: Antigravity_40_Speed_Transmission.scs
         tag_name: v${{ github.run_number }}
@@ -45,6 +48,6 @@ jobs:
           **Changes in this version:**
           - Compiled for ETS2 v1.58
           - Updated truck compatibility list
-          - Automated build via GitHub Actions
+          - Automated build via GitHub Actions (v4)
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
