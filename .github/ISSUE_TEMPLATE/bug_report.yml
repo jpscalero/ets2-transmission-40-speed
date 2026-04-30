@@ -1,40 +1,39 @@
-name: Bug Report / Reporte de Error
-description: Create a report to help us improve the transmission mod / Crea un reporte para ayudarnos a mejorar.
+name: Reporte de Error
+description: Crea un reporte para ayudarnos a mejorar el mod de transmisión.
 labels: [bug, v1.58]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for reporting! Please provide as much detail as possible.
-        ¡Gracias por reportar! Por favor, proporciona todos los detalles posibles.
+        ¡Gracias por reportar! Por favor, proporciona todos los detalles posibles para ayudar a nuestros ingenieros a diagnosticar el problema.
   - type: input
     id: truck_model
     attributes:
-      label: Truck Model / Modelo de Camión
-      description: Which truck are you using? / ¿Qué camión usas?
-      placeholder: e.g. Scania S 2016
+      label: Modelo de Camión
+      description: ¿Qué camión estás usando? (ej. Scania S 2016)
+      placeholder: ej. Volvo FH16 2012
     validations:
       required: true
   - type: dropdown
     id: version
     attributes:
-      label: Game Version / Versión del Juego
+      label: Versión del Juego
       options:
         - v1.58.x
-        - v1.57.x
-        - Other
+        - v1.57.x (Legado)
+        - Otra
     validations:
       required: true
   - type: textarea
     id: description
     attributes:
-      label: Problem Description / Descripción del Problema
-      description: What happened? / ¿Qué ha pasado?
+      label: Descripción del Problema
+      description: ¿Qué ha pasado? (ej. "El juego se cierra al seleccionar la marcha", "La marcha 40 no tiene potencia")
     validations:
       required: true
   - type: textarea
     id: logs
     attributes:
-      label: Game Log (game.log.txt)
-      description: Please paste your game.log.txt here / Pega tu game.log.txt aquí.
+      label: Log del Juego (game.log.txt)
+      description: Por favor, pega las líneas relevantes de tu game.log.txt o sube el archivo.
       render: text

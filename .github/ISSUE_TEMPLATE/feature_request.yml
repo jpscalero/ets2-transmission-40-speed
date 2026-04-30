@@ -1,16 +1,18 @@
-name: Feature Request
-description: Suggest an idea for the Antigravity project.
+name: Sugerencia de Mejora
+description: Sugiere una idea para el proyecto Antigravity.
 labels: [enhancement]
 body:
   - type: textarea
     id: feature
     attributes:
-      label: Feature Description
-      description: Describe the new transmission logic or truck support you would like to see.
+      label: Descripción de la Mejora
+      description: Describe la nueva lógica de transmisión o el soporte para camiones que te gustaría ver.
     validations:
       required: true
   - type: textarea
     id: rationale
     attributes:
-      label: Why is this needed?
-      description: Explain how this improves the heavy hauling experience.
+      label: ¿Por qué es necesario?
+      description: Explica cómo esto mejora la experiencia de transporte pesado.
+    validations:
+      required: true

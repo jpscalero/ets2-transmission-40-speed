@@ -1,66 +1,66 @@
-# Antigravity 40-Speed Transmission Project 🚛💎
+# Proyecto de Transmisión Antigravity de 40 Velocidades 🚛💎
 
-[![ETS2 Compatibility](https://img.shields.io/badge/ETS2-v1.58.x-blue.svg?style=for-the-badge&logo=eurotrucksimulator2)](https://www.eurotrucksimulator2.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
-[![Engine Support](https://img.shields.io/badge/Support-30,000HP_Ready-red.svg?style=for-the-badge)](https://github.com/jpscalero/ets2-transmission-40-speed/wiki)
-[![Open Source](https://img.shields.io/badge/Open_Source-❤-orange.svg?style=for-the-badge)](CONTRIBUTING.md)
+[![Compatibilidad ETS2](https://img.shields.io/badge/ETS2-v1.58.x-blue.svg?style=for-the-badge&logo=eurotrucksimulator2)](https://www.eurotrucksimulator2.com/)
+[![Licencia: MIT](https://img.shields.io/badge/Licencia-MIT-green.svg?style=for-the-badge)](LICENSE)
+[![Soporte de Motor](https://img.shields.io/badge/Soporte-30,000HP_Listo-red.svg?style=for-the-badge)](https://github.com/jpscalero/ets2-transmission-40-speed/wiki)
+[![Código Abierto](https://img.shields.io/badge/Código_Abierto-❤-orange.svg?style=for-the-badge)](CONTRIBUTING.md)
 
-**The ultimate gear synchronization solution for heavy hauling and extreme power applications in Euro Truck Simulator 2.**
+**La solución definitiva de sincronización de marchas para cargas pesadas y aplicaciones de potencia extrema en Euro Truck Simulator 2.**
 
 ---
 
-## 🚀 Features
+## 🚀 Características
 
-*   **Antigravity Synchronizer**: 40 forward gears precision-tuned for smooth torque delivery between 100 HP and 30,000 HP.
-*   **Symbolic Economy**: Priced at **2€** in-game to ensure maximum accessibility for all players (Monetización Simbólica).
-*   **Zero-Level Unlock**: Available from Level 0. No barriers, just power.
-*   **Universal v1.58 Native Support**: Plug-and-play compatibility with all original SCS trucks.
-*   **Bilingual Integration**: Full support for English and Spanish players.
+*   **Sincronizador Antigravity**: 40 marchas hacia adelante ajustadas con precisión para una entrega de par suave entre 100 CV y 30,000 CV.
+*   **Economía Simbólica**: Precio de **2€** en el juego para garantizar la máxima accesibilidad para todos los jugadores.
+*   **Desbloqueo desde Nivel 0**: Disponible desde el principio. Sin barreras, solo potencia.
+*   **Soporte Nativo v1.58**: Compatibilidad plug-and-play con todos los camiones originales de SCS.
+*   **Integración Total**: Diseñado específicamente para la comunidad de habla hispana.
 
-## 📊 Performance Benchmarks (High-Power Sync)
+## 📊 Benchmarks de Rendimiento (Sincronización de Alta Potencia)
 
-| Metric | Stock 12-Speed | Antigravity 40-Speed | Improvement |
+| Métrica | Transmisión Stock 12 | Antigravity 40-Vel | Mejora |
 | :--- | :--- | :--- | :--- |
-| **Torque Stability** | High Vibration | **Ultra Stable** | 95% reduction in physics glitch |
-| **0-100 km/h (18t)** | 8.2s | **3.4s** | +140% acceleration sync |
-| **Heavy Haul (>100t)** | Gear Hunting | **Linear Climb** | Elimination of torque gaps |
-| **Max HP Handling** | < 1,000 HP | **Up to 30,000 HP** | Industrial scale performance |
+| **Estabilidad de Par** | Alta Vibración | **Ultra Estable** | 95% reducción de fallos físicos |
+| **0-100 km/h (18t)** | 8.2s | **3.4s** | +140% aceleración sincronizada |
+| **Carga Pesada (>100t)** | Saltos de Marcha | **Subida Lineal** | Eliminación de huecos de par |
+| **Gestión de CV Máx.** | < 1,000 CV | **Hasta 30,000 CV** | Rendimiento a escala industrial |
 
-## 🛠️ Compatibility Matrix (v1.58)
+## 🛠️ Matriz de Compatibilidad (v1.58)
 
-Our engineers have validated the `ag40` architecture across the following native chassis:
+Nuestros ingenieros han validado la arquitectura `ag40` en los siguientes chasis nativos:
 
 *   ✅ **Scania**: R 2009, Streamline, R 2016, S 2016.
 *   ✅ **Volvo**: FH16 2009, FH16 2012.
 *   ✅ **MAN**: TGX, TGX Euro 6, TGX 2020.
 *   ✅ **DAF**: XF, XF 105, 2021, XD.
-*   ✅ **Mercedes-Benz**: Actros, New Actros (2014).
+*   ✅ **Mercedes-Benz**: Actros, Nuevo Actros (2014).
 *   ✅ **Renault**: T, Magnum, Premium.
 *   ✅ **Iveco**: Stralis, Hi-Way, S-Way.
 
-## 📥 Installation
+## 📥 Instalación
 
-### Beginner (Standard)
-1. Download the latest `.scs` package from [Releases](../../releases).
-2. Move it to your `Documents/Euro Truck Simulator 2/mod` folder.
-3. Activate in the Mod Manager with High Priority.
+### Nivel Principiante
+1. Descarga el paquete `.scs` más reciente desde [Releases](../../releases).
+2. Muévelo a tu carpeta `Documentos/Euro Truck Simulator 2/mod`.
+3. Actívalo en el Gestor de Mods con Prioridad Alta.
 
-### Advanced (Dev Build)
-1. Clone this repository.
-2. Run the generator script to tailor the build:
+### Nivel Avanzado (Build de Desarrollo)
+1. Clona este repositorio.
+2. Ejecuta el script generador para personalizar la build:
    ```bash
    python generator.py
    ```
-3. Pack the `/mod_files` content and deploy.
+3. Empaqueta el contenido de `/mod_files` y despliega.
 
-## 📖 Documentation & Wiki
+## 📖 Documentación y Wiki
 
-For deep technical insights, ratio theory, and troubleshooting, visit our [Project Wiki](https://github.com/jpscalero/ets2-transmission-40-speed/wiki):
-*   [Gear Ratio Theory](wiki/Theory)
-*   [Troubleshooting Guide](wiki/Troubleshooting)
-*   [Developer Guidelines](CONTRIBUTING.md)
+Para obtener detalles técnicos profundos, teoría de ratios y solución de problemas, visita nuestra [Wiki del Proyecto](https://github.com/jpscalero/ets2-transmission-40-speed/wiki):
+*   [Teoría de Ratios de Marcha](wiki/Home)
+*   [Guía de Solución de Problemas](wiki/Installation)
+*   [Directrices para Desarrolladores](CONTRIBUTING.md)
 
 ---
 
-**Project Auditor**: Juan Pedro.
-**Maintainer**: [jpscalero](https://github.com/jpscalero).
+**Auditor del Proyecto**: Juan Pedro.
+**Mantenedor**: [jpscalero](https://github.com/jpscalero).

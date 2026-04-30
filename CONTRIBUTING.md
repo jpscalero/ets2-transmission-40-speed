@@ -1,27 +1,27 @@
-# Contributing to Antigravity 40-Speed
+# Contribuyendo a Antigravity 40-Speed
 
-First off, thank you for considering contributing to the Antigravity project! We welcome all modders who share our passion for high-performance heavy hauling.
+En primer lugar, ¡gracias por considerar contribuir al proyecto Antigravity! Damos la bienvenida a todos los modders que comparten nuestra pasión por el transporte pesado de alto rendimiento.
 
-## 📜 Code of Conduct
-By participating in this project, you agree to maintain a professional and collaborative tone. We follow SCS Software's best practices for modding integrity.
+## 📜 Código de Conducta
+Al participar en este proyecto, aceptas mantener un tono profesional y colaborativo. Seguimos las mejores prácticas de SCS Software para la integridad del modding.
 
-## 🛠️ How Can I Contribute?
+## 🛠️ ¿Cómo puedo contribuir?
 
-### Reporting Bugs
-Use the [Bug Report](../../issues) template. Always include your `game.log.txt`.
+### Reportar Errores
+Usa la plantilla de [Reporte de Error](../../issues). Incluye siempre tu `game.log.txt`.
 
-### Suggesting Enhancements
-We are always looking for better gear ratio curves. If you have a mathematical model for better torque delivery, open a [Feature Request](../../issues).
+### Sugerir Mejoras
+Siempre estamos buscando mejores curvas de ratio de marchas. Si tienes un modelo matemático para una mejor entrega de par, abre una [Sugerencia de Mejora](../../issues).
 
 ### Pull Requests
-1.  Fork the repo.
-2.  Create a branch for your feature (`git checkout -b feature/AmazingRatio`).
-3.  Ensure `generator.py` is updated and produces valid `.sii` files.
-4.  Commit your changes with descriptive messages.
-5.  Open a Pull Request against the `master` branch.
+1. Haz un Fork del repositorio.
+2. Crea una rama para tu mejora (`git checkout -b mejora/RatioIncreible`).
+3. Asegúrate de que `generator.py` esté actualizado y produzca archivos `.sii` válidos.
+4. Confirma tus cambios con mensajes descriptivos.
+5. Abre un Pull Request contra la rama `master`.
 
-## ⚖️ License
-By contributing, you agree that your contributions will be licensed under the project's [MIT License](LICENSE).
+## ⚖️ Licencia
+Al contribuir, aceptas que tus contribuciones estarán licenciadas bajo la [Licencia MIT](LICENSE) del proyecto.
 
 ---
-*Antigravity Project Maintainers*
+*Mantenedores del Proyecto Antigravity*
