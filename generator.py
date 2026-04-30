@@ -2,7 +2,8 @@ import os
 import shutil
 import logging
 
-# --- CONFIGURATION (ETS2 v1.58 Internal Names) ---
+# --- CONFIGURACIÓN (Nombres Internos ETS2 v1.58) ---
+# Listado de camiones soportados
 TRUCKS = {
     "DAF XF": "daf.xf",
     "DAF XF 105": "daf.xf_105",
@@ -27,21 +28,22 @@ TRUCKS = {
     "Volvo FH16 2012": "volvo.fh16_2012"
 }
 
+# Parámetros del Mod
 PRICE = 2
 UNLOCK = 0
 BASE_DIR = "mod_files"
-MOD_ID = "ag40" # Antigravity 40-Speed ID
+MOD_ID = "ag40" 
 
-# Setup Logging
+# Configuración de Logs
 logging.basicConfig(level=logging.INFO, format='[%(levelname)s] %(message)s')
-logger = logging.getLogger("ModAuditor")
+logger = logging.getLogger("SCS_Mod_Auditor")
 
-# --- TEMPLATE ---
+# --- PLANTILLA SII ---
 TRANSMISSION_TEMPLATE = """SiiNunit
 {{
 accessory_transmission_data : {id}.{truck}.transmission
 {{
-	name: "Antigravity 40-Speed {truck_display}"
+	name: "Antigravity 40-Vel {truck_display}"
 	price: {price}
 	unlock: {unlock}
 	icon: "transmission_generic"
@@ -60,8 +62,8 @@ accessory_transmission_data : {id}.{truck}.transmission
 """
 
 def generate_ratios(count):
+    """Genera una progresión suave de 40 marchas."""
     ratios = []
-    # 40 gears: smooth progression from 15.0 to 0.5
     start = 15.0
     end = 0.5
     step = (start - end) / (count - 1)
@@ -71,23 +73,21 @@ def generate_ratios(count):
     return "\n".join(ratios)
 
 def main():
-    logger.info("Starting mod audit and repair for v1.58...")
+    logger.info("=== Iniciando Auditoría y Generación de Mod v1.58 ===")
     
-    # Cleanup and folder creation
+    # Limpieza de archivos previos
     if os.path.exists(BASE_DIR):
         shutil.rmtree(BASE_DIR)
-        logger.info(f"Cleaned up {BASE_DIR}")
+        logger.info(f"Limpieza de {BASE_DIR} completada.")
     
     ratios_str = generate_ratios(40)
     total_processed = 0
 
     for display_name, internal_name in TRUCKS.items():
-        # Path: def/vehicle/truck/[internal_name]/transmission/
+        # Ruta: def/vehicle/truck/[internal_name]/transmission/
         path = os.path.join(BASE_DIR, "def", "vehicle", "truck", internal_name, "transmission")
         os.makedirs(path, exist_ok=True)
         
-        # Header formatting: ag40.scania.s_2016.transmission
-        # We use the raw internal name as requested
         content = TRANSMISSION_TEMPLATE.format(
             id=MOD_ID,
             truck=internal_name,
@@ -103,13 +103,13 @@ def main():
         try:
             with open(file_path, "w", encoding="utf-8") as f:
                 f.write(content)
-            logger.info(f"Generated transmission for: {display_name} -> {internal_name}")
+            logger.info(f"OK: {display_name} -> {internal_name}")
             total_processed += 1
         except Exception as e:
-            logger.error(f"Failed to generate for {display_name}: {e}")
+            logger.error(f"ERROR en {display_name}: {e}")
 
-    logger.info(f"Audit Complete. Total trucks processed: {total_processed}")
-    logger.info(f"Structure generated in: {os.path.abspath(BASE_DIR)}")
+    logger.info(f"Generación finalizada. Total camiones: {total_processed}")
+    logger.info(f"Estructura lista en: {os.path.abspath(BASE_DIR)}")
 
 if __name__ == "__main__":
     main()

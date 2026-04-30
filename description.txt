@@ -1,0 +1,15 @@
+[ES]
+Este mod añade una transmisión de 40 marchas ultra-eficiente para todos los camiones originales de Euro Truck Simulator 2 (v1.58).
+Características:
+- 40 marchas hacia adelante (15.00 a 0.50).
+- 3 marchas atrás.
+- Compatible con Scania, Volvo, MAN, DAF, Iveco, Renault y Mercedes.
+- Desbloqueado desde nivel 0 por solo 2 créditos.
+
+[EN]
+This mod adds an ultra-efficient 40-speed transmission for all original trucks in Euro Truck Simulator 2 (v1.58).
+Features:
+- 40 forward gears (15.00 to 0.50).
+- 3 reverse gears.
+- Compatible with Scania, Volvo, MAN, DAF, Iveco, Renault, and Mercedes.
+- Unlocked from level 0 for only 2 credits.

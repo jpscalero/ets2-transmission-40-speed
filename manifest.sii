@@ -1,9 +1,11 @@
 SiiNunit
 {
 mod_package : .package {
-    package_version: "1.58"
-    display_name: "40 Gears Universal"
-    author: "Architect"
+    package_version: "1.58.1"
+    display_name: "Antigravity 40-Speed Transmission Pack"
+    author: "jpscalero & Antigravity AI"
     category[]: "transmission"
+    icon: "mod_icon.jpg"
+    description_file: "description.txt"
 }
 }
